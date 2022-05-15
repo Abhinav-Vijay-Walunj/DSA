@@ -11,6 +11,23 @@
  */
 class Solution {
 public:
+    int deepestLeavesSum(TreeNode* root) {
+    queue<TreeNode*> toDo;
+        toDo.push(root);
+        int sum(0);
+        while(!toDo.empty()){
+            sum = 0; // re-initiate at each level
+            int n(toDo.size());
+            while(n--){
+                TreeNode* node(toDo.front()); toDo.pop();
+                if(!node->right && !node->left) sum+=node->val;
+                if(node->left) toDo.push(node->left);
+                if(node->right) toDo.push(node->right);
+            }
+        }
+        return sum;
+    }
+    /*
     int max_depth;
     
     int sumHelper (TreeNode* root, int depth) {
@@ -27,5 +44,5 @@ public:
     int deepestLeavesSum(TreeNode* root) {
         max_depth = depthHelper(root);
         return sumHelper(root, 0);
-    }
+    }*/
 };
