@@ -1,5 +1,5 @@
 # Minimum Number in a sorted rotated array
-## Easy 
+##  Easy 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given an array of distinct elements which was initially sorted.&nbsp;This array&nbsp;is rotated at some unknown point. The task is to find the minimum element in the given sorted and rotated array.&nbsp;</span></p>
 
