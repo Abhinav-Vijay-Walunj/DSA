@@ -21,38 +21,6 @@ public:
         
         int n=word1.size(),m=word2.size();
         return m+n-2*lcs(word1,word2,n,m);
-        /*
-        int n=word1.size(),m=word2.size();
-        unordered_map<char,int> mp;
-        for(int i=0;i<n;i++)
-        {
-            if(mp.find(word1[i])!=mp.end())
-            {
-                mp[word1[i]]++;
-            }
-            else
-            {
-                mp[word1[i]]=1;
-            }
-        }
         
-        for(int i=0;i<n;i++)
-        {
-            if(mp.find(word2[i])!=mp.end())
-            {
-                mp[word2[i]]--;
-            }
-            else
-            {
-                mp[word2[i]]=1;
-            }
-        }
-        int ans=0;
-        
-        for(auto &i:mp)
-        {
-            ans+=i.second;
-        }
-        return ans;*/
     }
 };
