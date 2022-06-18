@@ -13,6 +13,7 @@ class Solution
     { 
         int n=S.size();
         string ans="";
+        // to store ans
         for(int i=S.size()-1;i >= 0;i--)
         {
             string t="";
@@ -31,7 +32,8 @@ class Solution
         }
         
         return ans;
-        
+        // traversing from end when i hit '.' i stop adding it into temp and then reverse temp and add '.' if it was present at s[i] insert it into main ans and
+        // return it.
         // code here 
     } 
 };
