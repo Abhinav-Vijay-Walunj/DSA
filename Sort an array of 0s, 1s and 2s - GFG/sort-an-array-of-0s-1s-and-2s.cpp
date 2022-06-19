@@ -42,7 +42,7 @@ class Solution
                 ar[i]=2;
             }
         }
-        // coode here 
+        // code here 
     }
     
 };
